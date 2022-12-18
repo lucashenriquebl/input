@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Rubik:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+body {
+  padding: 32px;
+}
+
+#home {
+  max-width: 480px;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
