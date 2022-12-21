@@ -1,26 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
 
+html,
 body {
-  background-color: #2F3E46;
-  padding: 20px;
-  font-family: Poppins, sans-serif;
+  height: 100%;
 }
 
-h1 {
-  background-color: #354F52;
-  width: 300px;
-  font-size: 32px;
-  border-radius: 20px 20px 20px 20px;
-  padding: 20px;
-  text-align: center;
-  color: #84A98C;
-  font-weight: bold;
+#container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
-.links {
-  margin-top: 20px;
-  display: block;
-  color: #84A98C;
-  font-size: 20px;
-  text-decoration: none;
+header {
+  background-color: black;
+  padding: 16px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  background-color: crimson;
+}
+
+aside {
+  background-color: blueviolet;
+  padding: 16px;
+  width: 85px;
+}
+
+#content {
+  flex: 1;
+  background-color: aqua;
+  padding: 16px;
+}
+
+footer {
+  background-color: #9c7878;
+  padding: 16px;
 }

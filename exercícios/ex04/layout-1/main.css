@@ -1,0 +1,39 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+}
+
+aside {
+  background-color: aqua;
+  padding: 16px;
+  width: 85px;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+header {
+  background-color: aquamarine;
+  padding: 16px;
+}
+
+#content {
+  background-color: blueviolet;
+  flex: 1;
+  padding: 16px;
+}
+
+footer {
+  background-color: brown;
+  padding: 16px;
+}
