@@ -1,0 +1,115 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 400px;
+  height: 600px;
+}
+
+span {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 20px;
+}
+
+header {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #c6c6c6;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 5px;
+}
+
+.header-right {
+  display: flex;
+  flex: 1;
+  height: 200px;
+  flex-direction: column;
+}
+
+.header-right .top-header-right {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6c6c6;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 5px;
+}
+
+.header-right .bottom-header-right {
+  display: flex;
+  height: 100px;
+}
+
+.l-bottom-header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #c6c6c6;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.r-bottom-header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #c6c6c6;
+  border-radius: 20px 20px 20px 20px;
+  margin-left: 5px;
+}
+
+main {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6c6c6;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 5px;
+}
+
+footer {
+  display: flex;
+  height: 200px;
+}
+
+footer .l-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #c6c6c6;
+  border-radius: 20px 20px 20px 20px;
+}
+
+footer .r-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #c6c6c6;
+  border-radius: 20px 20px 20px 20px;
+  margin-left: 5px;
+}
