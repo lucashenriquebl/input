@@ -5,21 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./style.css">
   <title>Flexbox</title>
+  <style>
+    #box {
+      background-color: red;
+    }
+
+    section#box.x.y {
+      background-color: green;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="container">
-    <header>Menu Topo</header>
-    <main>
-      <aside>Sidebar</aside>
-      <section id="content">Conteúdo</section>
-    </main>
-    <footer>Rodapé</footer>
+  <div id="box" class="x y">
+    <p>Eu sou uma div com a classe box.</p>
   </div>
-  <!-- /container -->
+  <section id="box" class="x y">
+    <p>Eu sou uma section com a classe box.</p>
+  </section>
+  <section id="box" class="x">
+    <p>Eu sou uma section com a classe box.</p>
+  </section>
+
 </body>
 
 </html>
