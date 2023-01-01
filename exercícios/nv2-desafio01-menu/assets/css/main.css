@@ -1,0 +1,83 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-family: 'Space Grotesk';
+  background-color: #F5F4F6;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  width: 25.6rem;
+  border-right: 1px solid #D6D4E2;
+}
+
+#menu .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .logo,
+#menu .user {
+  height: 7.2rem;
+  border-bottom: 1px solid #D6D4E2;
+}
+
+#menu .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#menu .user .user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu .user .user-details h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #18161F;
+}
+
+#menu .user .user-details p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #787491;
+}
+
+#menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.4rem;
+  gap: 3.2rem;
+}
+
+#menu-items li {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+#menu-items li a {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-decoration: none;
+  color: #18161F;
+}

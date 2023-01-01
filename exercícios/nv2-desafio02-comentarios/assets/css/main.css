@@ -1,0 +1,108 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Grotesk';
+}
+
+#comments {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+}
+
+.comment {
+  display: flex;
+  width: 720px;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 2.4rem;
+  padding: 2.4rem 5.6rem;
+  border-radius: 3.2rem;
+}
+
+.comment .comment-wo-like {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.comment .comment-w-like {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+}
+
+.comment .comment-details {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.comment .comment-details .c-details-comment {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #18161F;
+  font-weight: 400;
+}
+
+.comment .comment-details .c-details-user {
+  display: flex;
+  gap: .5rem;
+}
+
+.comment .comment-details .c-details-user h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  color: #18161F;
+}
+
+.comment .comment-details .c-details-user p {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  color: #777777;
+}
+
+
+.comment:nth-child(3) {
+  padding: 2.4rem 5.6rem 0;
+}
+
+.comment .comment-likes {
+  display: flex;
+  align-items: center;
+  background-color: #F5F4F6;
+  border-radius: 0 0 3.2rem 3.2rem;
+  padding: 2.4rem 5.6rem;
+  width: 72rem;
+  align-self: center;
+  gap: 3rem;
+}
+
+.comment .comment-likes p {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+}
+
+.comment .comment-likes p span {
+  font-weight: 700;
+}
