@@ -1,0 +1,257 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+
+  --primary-color-light: #009EE3;
+  --primary-color-medium: #007eB5;
+  --primary-color-dark: #005E88;
+
+  --secondary-color-light: rgba(71, 154, 209, 0.15);
+  --secondary-color-medium: rgba(71, 154, 209, 0.3);
+  --secondary-color-dark: rgba(71, 154, 209, 0.45);
+
+  --dark-color-primary: #000000;
+  --dark-color-secondary: #333333;
+  --dark-color-tertiary: #666666;
+  --dark-color-quaternary: #c5c5c5;
+
+  --light-color-primary: #FFFFFF;
+  --light-color-secondary: #F5F5F5;
+  --light-color-tertiary: #E5E5E5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--light-color-secondary);
+  overflow-x: hidden;
+}
+
+#top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 3.2rem;
+  background-color: var(--light-color-primary);
+}
+
+#top-header #menu {
+  display: flex;
+  align-items: center;
+}
+
+#top-header #menu #t-menu {
+  display: flex;
+  gap: 2rem;
+  margin-right: 1.6rem;
+}
+
+#top-header #menu a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: var(--dark-color-tertiary);
+  padding: 1rem 2.4rem;
+}
+
+#top-header .t-help {
+  padding-left: 1rem;
+  border-left: 1px solid var(--dark-color-tertiary);
+}
+
+#top-header #t-button {
+  display: flex;
+  gap: 1.6rem;
+  margin-right: 2rem;
+}
+
+#top-header #t-button button {
+  padding: 1rem 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  border-radius: .4rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+#top-header #t-button button:nth-child(1) {
+  background-color: var(--secondary-color-light);
+  color: var(--primary-color-light);
+}
+
+#top-header #t-button button:nth-child(2) {
+  background-color: var(--primary-color-light);
+  color: var(--light-color-primary);
+}
+
+#bot-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-color-secondary);
+  padding: 1.3rem 0;
+}
+
+#bot-header p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--dark-color-tertiary);
+}
+
+#banner {
+  background-image: url(../img/3c274750861afa486b9c\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 11.4rem 12rem;
+}
+
+#banner .call-to-action {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#banner .call-to-action h1 {
+  width: 33.6rem;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--light-color-primary);
+}
+
+#banner .call-to-action form {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+#banner .call-to-action form label {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: var(--light-color-primary);
+}
+
+#banner .call-to-action form .ct-form {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem;
+  gap: 1.2rem;
+  background-color: var(--light-color-primary);
+  width: 38.9rem;
+  border-radius: .4rem;
+}
+
+#banner .call-to-action form .ct-form input {
+  outline: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--dark-color-quaternary);
+}
+
+#banner .call-to-action form .ct-form input::placeholder {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: var(--dark-color-quaternary);
+}
+
+#banner .call-to-action form .ct-form button {
+  padding: .8rem 1.6rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: var(--dark-color-tertiary);
+  border: 0;
+}
+
+#cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 12rem;
+  top: 52rem;
+  gap: 2.8rem;
+}
+
+#cards .card-left,
+#cards .card-right {
+
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  background-color: var(--light-color-primary);
+  border: 2px solid var(--light-color-tertiary);
+  border-radius: .8rem;
+  width: 52.6rem;
+  /* height: 26.6rem; */
+  padding: 2.4rem
+}
+
+#cards .card-left .cl-card,
+#cards .card-right .cr-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#cards .card-left .cl-card h3,
+#cards .card-right .cr-card h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  color: var(--dark-color-primary);
+}
+
+#cards .card-left .cl-card p,
+#cards .card-right .cr-card p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--dark-color-primary);
+}
+
+#cards .card-left .cl-card button,
+#cards .card-right .cr-card button {
+  padding: 1.6rem 7.2rem;
+  background-color: var(--primary-color-light);
+  border-radius: .4rem;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: var(--light-color-primary);
+}
+
+footer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--light-color-primary);
+  border-top: .2rem solid var(--light-color-tertiary);
+  padding: 1rem 2.4rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 1.7rem;
+  background-color: red;
+}
