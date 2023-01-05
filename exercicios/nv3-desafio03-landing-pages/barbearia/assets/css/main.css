@@ -368,6 +368,10 @@ footer ul {
     padding: 4.8rem 7.2rem;
   }
 
+  #services .services-cards {
+    justify-content: space-around;
+  }
+
   #local-map .local-map-title {
     padding: 0 7.2rem;
   }
