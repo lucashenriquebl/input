@@ -46,7 +46,7 @@ header button {
 #hero {
   display: flex;
   flex-direction: column;
-  padding: 4.8rem 2rem;
+  padding: 4.8rem 2rem 0 2rem;
   gap: 3.2rem;
   background-color: var(--light-color-secondary);
 }
@@ -89,6 +89,7 @@ header button {
   align-items: center;
   position: relative;
   border-radius: 9rem;
+  width: 29.6rem;
 }
 
 #hero button::before {
@@ -132,11 +133,14 @@ header button {
 .cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 4rem;
 }
 
 .card {
+  width: 32.8rem;
+  height: 47.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,6 +232,8 @@ header button {
 
 #map {
   background-image: url('../img/map.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   height: 400px;
 }
@@ -255,4 +261,122 @@ footer p {
 footer ul {
   display: flex;
   gap: 2.9rem;
+}
+
+@media (min-width: 480px) {
+  #logo {
+    width: 21rem;
+  }
+
+  #hero .hero-text h2 {
+    font-size: 4rem;
+  }
+
+  #hero .hero-text p {
+    font-size: 1.8rem;
+  }
+
+  #services .services-title p {
+    font-size: 1.6rem;
+
+  }
+
+  #services .services-title h3 {
+    font-size: 3rem;
+  }
+
+  #info .info-title p {
+    font-size: 1.8rem;
+
+  }
+
+  #info .info-title h3 {
+    font-size: 3rem;
+  }
+
+  #info p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  .card .card-text h4 {
+    font-size: 2.4rem;
+  }
+
+  .card .card-text p {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #hero img {
+    width: 40rem;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  #hero img {
+    width: 50rem;
+  }
+
+  #hero .hero-text h2 {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+  }
+
+  #hero .hero-text p {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 2.4rem 7.2rem;
+  }
+
+  #hero {
+    padding: 4.8rem 7.2rem 0 7.2rem;
+    justify-content: space-between;
+  }
+
+  #hero .hero-text {
+    width: 59rem;
+  }
+
+  #hero img {
+    width: 56rem;
+  }
+
+  #services {
+    padding: 4.8rem 7.2rem;
+  }
+
+  #services .cards {
+    justify-content: space-between;
+  }
+
+  #info {
+    padding: 4.8rem 7.2rem;
+  }
+
+  footer {
+    padding: 4.8rem 7.2rem;
+  }
 }
