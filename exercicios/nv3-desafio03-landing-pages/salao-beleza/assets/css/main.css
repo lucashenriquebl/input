@@ -1,0 +1,98 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;700;800&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+
+  --dark-color-primary: #000000;
+  --dark-color-secondary: #0A0A0A;
+  --dark-color-tertiary: #3C3640;
+  --pink-color-primary: #AF05AA;
+  --pink-color-secondary: #EA21A2;
+  --light-color-primary: #FFFFFF;
+  --light-color-secondary: #F5EEEE;
+}
+
+body {
+  background-color: var(--light-color-secondary);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 3.5rem;
+}
+
+header button {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9rem;
+  border: .2rem solid var(--dark-color-primary);
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 2rem;
+  gap: 3.2rem;
+}
+
+#hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: 1.6rem;
+}
+
+#hero .hero-text h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', sans-serif;
+  color: var(--dark-color-secondary);
+}
+
+#hero .hero-text p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--dark-color-tertiary);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#hero button {
+  background-color: var(--pink-color-primary);
+  padding: 2rem 4rem;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: var(--light-color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 9rem;
+}
+
+#hero button::before {
+  padding-right: 1rem;
+  content: url(../img/whatsapp.svg);
+  position: absolute;
+  left: 5rem;
+  top: 1.8rem;
+}
